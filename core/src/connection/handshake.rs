@@ -45,7 +45,7 @@ where
     let mut packet = ClientHello::new();
     packet
         .mut_build_info()
-        .set_product(protocol::keyexchange::Product::PRODUCT_PARTNER);
+        .set_product(protocol::keyexchange::Product::PRODUCT_CLIENT);
     packet
         .mut_build_info()
         .set_platform(protocol::keyexchange::Platform::PLATFORM_LINUX_X86);
